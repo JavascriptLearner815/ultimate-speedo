@@ -1,0 +1,26 @@
+{
+  "name": "ultimate-speedo",
+  "version": "1.0.0",
+  "description": "This is the ultimate version of me, constantly being updated.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavascriptLearner815/ultimate-speedo.git"
+  },
+  "keywords": [
+    "discord.js"
+  ],
+  "author": "Dean Summer <deanlovesmargie@gmail.com> (https://JavascriptLearner815.github.io/SpeedoThreeSixty/home.html)",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/JavascriptLearner815/ultimate-speedo/issues"
+  },
+  "homepage": "https://github.com/JavascriptLearner815/ultimate-speedo#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "eslint": "^7.9.0"
+  }
+}

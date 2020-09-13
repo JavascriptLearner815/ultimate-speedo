@@ -6,3 +6,4 @@ settings.json
 /.vscode
 /node_modules
 /private
+.eslint
