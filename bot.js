@@ -77,4 +77,14 @@ client.on('message', message => {
     }
 });
 
+client.on('shardError', error => {
+    console.error('Websocket connection error:', error);
+});
+
+process.on('unhandledRejection', error => {
+    console.error('Unhandled promise rejection:', error);
+});
+
+client.on('debug', console.debug);
+
 client.login(token);
