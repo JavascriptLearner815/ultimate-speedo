@@ -13,7 +13,7 @@ module.exports = {
             const command = message.client.commands.get(commandName)
                 || message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
     
-            if (!command) return message.channel.send(`Lmfao there is no command with name or alias \`${commandName}\`.`);
+            if (!command) return message.channel.send(`\u200bLmfao there is no command with name or alias \`${commandName}\`.`);
 
             delete require.cache[require.resolve(`./${command.name}.js`)];
 
@@ -22,12 +22,12 @@ module.exports = {
                 message.client.commands.set(newCommand.name, newCommand);
             } catch (error) {
                 console.error('Error reloading command:', error);
-                message.reply(`oof, error reloading command \`${command.name}\`:\n\`${error.message}\`.`);
+                message.reply(`\u200boof, error reloading command \`${command.name}\`:\n\`${error.message}\`.`);
             } finally {
-                message.channel.send(`Command \`${command.name}\` was successfully reloaded!`);
+                message.channel.send(`\u200bCommand \`${command.name}\` was successfully reloaded!`);
             }
         } else {
-            return message.reply('hey dummy you aren\'t the owner of this bot!');
+            return message.reply('\u200bhey dummy you aren\'t the owner of this bot!');
         }
     },
 };

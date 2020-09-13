@@ -36,14 +36,14 @@ client.on('message', message => {
     if (!command) return;
 
     if (command.guildOnly && message.channel.type === 'dm') {
-        return message.reply('lol you need to use this command in a server.');
+        return message.reply('\u200blol you need to use this command in a server.');
     }
 
     if (command.args && !args.length) {
-        let reply = 'you need to provide some arguments, are you a noob?';
+        let reply = '\u200byou need to provide some arguments, are you a noob?';
 
         if (command.usage) {
-            reply += `\nSmfh just use it like this: \`${prefix}${command.name} ${command.usage}\`.`;
+            reply += `\u200b\nSmfh just use it like this: \`${prefix}${command.name} ${command.usage}\`.`;
         }
 
         return message.reply(reply);
@@ -62,7 +62,7 @@ client.on('message', message => {
 
         if (now < expirationTime) {
             const timeLeft = (expirationTime - now) / secondConversion;
-            return message.reply(`woaaaaaah slow down, wait ${timeLeft.toFixed(1)} second(s).`);
+            return message.reply(`\u200bwoaaaaaah slow down, wait ${timeLeft.toFixed(1)} second(s).`);
         }
     }
 
@@ -73,7 +73,7 @@ client.on('message', message => {
         command.execute(message, args);
     } catch (error) {
         console.error('Error executing command:', error);
-        message.reply('an error occurred trying to execute that command!');
+        message.reply('\u200ban error occurred trying to execute that command!');
     }
 });
 

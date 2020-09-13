@@ -4,6 +4,6 @@ module.exports = {
     aliases: ['latency'],
     cooldown: 10,
     execute(message, args) {
-        message.channel.send(`:ping_pong: Pong! ${message.client.ws.ping}ms.`);
+        message.channel.send(`\u200b:ping_pong: Pong! ${message.client.ws.ping}ms.`);
     },
 };
